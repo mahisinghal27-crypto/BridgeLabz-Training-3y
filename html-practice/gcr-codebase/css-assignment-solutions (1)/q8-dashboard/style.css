@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f2f3f6;
+  color: #222;
+}
+
+/* Fixed header */
+.dash-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3.5rem;
+  background-color: #22232b;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 0 1.5em;
+  z-index: 100;
+}
+
+.dash-header h1 {
+  font-size: 1.3rem;
+}
+
+.dash-body {
+  display: flex;
+  padding-top: 3.5rem; /* offset for fixed header */
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background-color: #2f303c;
+  min-height: calc(100vh - 3.5rem);
+  padding: 1.5em 1em;
+}
+
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.sidebar nav a {
+  color: #cfcfd6;
+  text-decoration: none;
+  padding: 0.7em 1em;
+  border-radius: 6px;
+  font-size: 0.95em;
+}
+
+.sidebar nav a:hover,
+.sidebar nav a.active {
+  background-color: #d97757;
+  color: #fff;
+}
+
+/* Main content */
+.content {
+  flex: 1;
+  padding: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5em;
+  align-content: flex-start;
+}
+
+.box {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 1.8em;
+  min-width: 220px;
+  flex: 1 1 240px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.box h2 {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 0.5em;
+}
+
+.box .stat {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #22232b;
+}
+
+/* Stack sidebar above content on small screens */
+@media (max-width: 700px) {
+  .dash-body {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    min-height: auto;
+  }
+
+  .sidebar nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}

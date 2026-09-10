@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  color: #2b2b2b;
+  background-color: #fafafa;
+}
+
+header {
+  background-color: #3a3a2c;
+  color: #fff;
+  text-align: center;
+  padding: 2.5em 1em;
+}
+
+header h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  background-color: #55573f;
+  padding: 1em;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Sections ===== */
+.section {
+  width: 100%;
+  padding: 8vh 10%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 0.6em;
+}
+
+.section p {
+  font-size: 1.05em;
+  max-width: 70ch;
+  line-height: 1.7;
+}
+
+/* Linear gradient section */
+.gradient-linear {
+  background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+  color: #2b2b2b;
+}
+
+/* Radial gradient section */
+.gradient-radial {
+  background: radial-gradient(circle at top left, #a1c4fd 0%, #c2e9fb 100%);
+  color: #1a1a1a;
+}
+
+/* Parallax-style fixed background sections */
+.parallax {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+}
+
+.parallax-1 {
+  background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+    url("https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=1600");
+}
+
+.parallax-2 {
+  background-image: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+    url("https://images.unsplash.com/photo-1478436127897-769e1b3f0f36?w=1600");
+}
+
+.overlay-text {
+  max-width: 700px;
+}
+
+footer {
+  text-align: center;
+  padding: 2em 1em;
+  background-color: #3a3a2c;
+  color: #fff;
+  font-size: 0.9em;
+}

@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f4f4f7;
+  color: #222;
+  padding: 3em 1em;
+}
+
+.page-title {
+  text-align: center;
+  margin-bottom: 2em;
+  font-size: 2rem;
+}
+
+.pricing-grid {
+  display: flex;
+  gap: 1.5em;
+  justify-content: center;
+  align-items: stretch;
+  max-width: 1000px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.plan {
+  flex: 1 1 260px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 2.5em 2em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: transform 0.25s ease, background-color 0.25s ease;
+}
+
+.plan:hover {
+  transform: scale(1.04);
+  background-color: #fafafa;
+}
+
+.plan h2 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5em;
+}
+
+.price {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+
+.price span {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #777;
+}
+
+.plan ul {
+  list-style: none;
+  margin-bottom: 1.5em;
+  flex: 1;
+}
+
+.plan ul li {
+  padding: 0.5em 0;
+  border-bottom: 1px solid #eee;
+  font-size: 0.95em;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.7em 1.2em;
+  background-color: #22232b;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background-color 0.25s ease;
+}
+
+.btn:hover {
+  background-color: #d97757;
+}
+
+/* Highlighted / most popular plan */
+.plan.popular {
+  border: 2px solid #d97757;
+}
+
+.plan.popular:hover {
+  background-color: #fff8f4;
+}
+
+.badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #d97757;
+  color: #fff;
+  font-size: 0.75em;
+  font-weight: 700;
+  padding: 0.3em 0.8em;
+  border-radius: 12px;
+}

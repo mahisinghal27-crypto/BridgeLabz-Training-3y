@@ -1,0 +1,113 @@
+/* ===== Reset & base ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f7f5f2;
+  color: #22232b;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== Header (fixed) ===== */
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4rem;
+  padding: 0 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #22232b;
+  color: #f7f5f2;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.site-header nav a {
+  color: #f7f5f2;
+  text-decoration: none;
+  margin-left: 2em;
+  font-size: 1em;
+  transition: color 0.2s ease;
+}
+
+.site-header nav a:hover {
+  color: #d97757;
+}
+
+/* ===== Main content ===== */
+main {
+  flex: 1;
+  padding-top: 6rem; /* offset for fixed header */
+  padding-bottom: 3rem;
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.bio-section {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  padding: 2em 0;
+  flex-wrap: wrap;
+}
+
+.profile-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #d97757;
+}
+
+.bio-text {
+  flex: 1;
+  min-width: 250px;
+}
+
+.bio-text h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5em;
+}
+
+.bio-text p {
+  font-size: 1em;
+  max-width: 60ch;
+}
+
+main section {
+  padding: 3vh 0;
+  border-top: 1px solid #ddd;
+}
+
+main section h3 {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+/* ===== Footer (always at bottom) ===== */
+.site-footer {
+  background-color: #22232b;
+  color: #f7f5f2;
+  text-align: center;
+  padding: 1.5em 0;
+  font-size: 0.9em;
+}

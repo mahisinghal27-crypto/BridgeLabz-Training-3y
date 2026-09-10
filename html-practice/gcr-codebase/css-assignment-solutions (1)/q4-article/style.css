@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  background-color: #fdfcfa;
+  color: #2b2b2b;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 3em 1.5em 5em;
+  line-height: 1.75;
+}
+
+.article-header {
+  margin-bottom: 2em;
+  border-bottom: 2px solid #222;
+  padding-bottom: 1em;
+}
+
+.article-header h1 {
+  font-size: 2.4rem;
+  font-weight: 800;
+  margin-bottom: 0.3em;
+}
+
+.subheading {
+  font-size: 0.95em;
+  color: #666;
+  font-style: italic;
+}
+
+article p {
+  margin-bottom: 1.4em;
+  font-size: 1.1em;
+}
+
+/* Drop cap on the first letter of each paragraph */
+article p::first-letter {
+  font-size: 2.6em;
+  font-weight: 700;
+  float: left;
+  line-height: 0.8;
+  margin-right: 0.08em;
+  color: #d97757;
+}
+
+/* Bold first line of each paragraph */
+article p::first-line {
+  font-weight: 700;
+}
+
+mark {
+  background-color: #fff1b8;
+  color: inherit;
+  padding: 0 0.15em;
+  border-radius: 2px;
+}
+
+blockquote {
+  margin: 2em 0;
+  padding: 0.8em 1.5em;
+  border-left: 4px solid #d97757;
+  background-color: #f6f2ee;
+  font-style: italic;
+  font-size: 1.15em;
+  color: #444;
+}

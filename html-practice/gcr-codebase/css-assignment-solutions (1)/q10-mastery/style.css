@@ -1,0 +1,214 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* ===== Header: sticky nav ===== */
+.main-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 6%;
+  background-color: rgba(34, 35, 43, 0.95);
+  color: #fff;
+}
+
+.logo {
+  font-weight: 800;
+  font-size: 1.3rem;
+}
+
+.main-header nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 2em;
+  font-size: 0.95em;
+}
+
+.main-header nav a:hover {
+  color: #d97757;
+}
+
+/* ===== Hero ===== */
+.hero {
+  position: relative;
+  min-height: 70vh;
+  background-image: linear-gradient(rgba(20,20,25,0.55), rgba(20,20,25,0.55)),
+    url("https://picsum.photos/id/1074/1600/900");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2em;
+}
+
+.hero-text {
+  color: #fff;
+  max-width: 600px;
+}
+
+.hero-text h1 {
+  font-size: 2.6rem;
+  font-weight: 800;
+  margin-bottom: 0.5em;
+}
+
+.hero-text p {
+  font-size: 1.1em;
+  color: rgba(255,255,255,0.85);
+}
+
+/* ===== About: two columns ===== */
+.about {
+  display: flex;
+  align-items: center;
+  gap: 3em;
+  padding: 5em 8%;
+  flex-wrap: wrap;
+}
+
+.about-text {
+  flex: 1 1 300px;
+}
+
+.about-text h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.6em;
+}
+
+.about-image {
+  flex: 1 1 300px;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+}
+
+/* ===== Services ===== */
+.services {
+  background-color: #f4f4f7;
+  padding: 5em 8%;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5em;
+}
+
+.service-boxes {
+  display: flex;
+  gap: 1.5em;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.service-box {
+  background-color: #fff;
+  flex: 1 1 240px;
+  max-width: 300px;
+  padding: 2em 1.5em;
+  border: 1px solid #e2e2e2;
+  border-radius: 10px;
+  outline: 1px solid transparent;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: outline-color 0.2s ease;
+}
+
+.service-box:hover {
+  outline-color: #d97757;
+}
+
+.service-box h3 {
+  margin-bottom: 0.5em;
+  color: #22232b;
+}
+
+/* ===== Contact ===== */
+.contact {
+  padding: 5em 8%;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1em;
+}
+
+.contact-form {
+  max-width: 480px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.7em 0.9em;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 1em;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #d97757;
+  box-shadow: 0 0 0 3px rgba(217,119,87,0.15);
+}
+
+.contact-form button {
+  padding: 0.8em;
+  background-color: #22232b;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #d97757;
+}
+
+/* ===== Footer ===== */
+.main-footer {
+  background-color: #22232b;
+  color: #fff;
+  text-align: center;
+  padding: 1.5em;
+  font-size: 0.9em;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 700px) {
+  .main-header {
+    flex-direction: column;
+    gap: 0.5em;
+  }
+
+  .main-header nav a {
+    margin: 0 0.7em;
+  }
+
+  .about {
+    flex-direction: column;
+  }
+}
